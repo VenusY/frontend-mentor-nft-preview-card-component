@@ -1,0 +1,129 @@
+html, body, main {
+  height: 100%;
+  margin: 0px;
+  background: hsl(217, 54%, 11%);
+
+  font-family: "Outfit";
+  font-size: 18px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  font-size: 14px;
+}
+
+hr {
+  width: 320px;
+  border: 1px solid hsl(215, 32%, 27%);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: hsl(216, 50%, 16%);
+  width: 360px;
+  height: 595px;
+  box-shadow: 0px 10px 0px hsl(216, 50%, 13%), -20px 30px 5px #0a1424, 20px 30px 5px #0a1424;
+  border-radius: 15px;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: 20px;
+}
+
+.container3 {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: 20px;
+}
+
+#nft-image {
+  height: 320px;
+  width: 320px;
+  margin: 20px;
+  background: url("D:\\Coding\\Web Development\\Frontend Mentor\\nft-preview-card-component-main\\images\\image-equilibrium.jpg");
+  background-size: cover;
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#eye-icon {
+  opacity: 0;
+}
+
+#nft-name {
+  font-weight: 600;
+  font-size: 22px;
+  color: white;
+  margin: 20px;
+}
+
+#nft-description {
+  margin: 20px;
+}
+
+#profile-picture {
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+#nft-value {
+  color: hsl(178, 100%, 50%);
+}
+
+#ethereum-icon {
+  margin-right: 5px;
+}
+
+#clock-icon {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+#creator-name, #fm-link, #my-name {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#creator-name:hover, #nft-name:hover, #fm-link:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+#nft-image:hover > #eye-icon{
+  opacity: 1;
+}
+
+#nft-image:hover {
+  box-shadow: 0 320px hsla(178, 100%, 50%, .5) inset;
+}
+
+@media screen and (max-height: 800px) {
+  body {
+    height: auto;
+    padding: 50px;
+  }
+}
